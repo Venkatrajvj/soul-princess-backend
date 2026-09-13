@@ -10,4 +10,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/soulprincess-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-Djava.net.preferIPv4Stack=true", "-jar", "target/soulprincess-backend-0.0.1-SNAPSHOT.jar"]
